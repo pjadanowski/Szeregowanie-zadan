@@ -1,0 +1,103 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #mynetwork {
+            width: 800px;
+            height: 800px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+    // create an array with nodes
+    var nodes = new vis.DataSet([
+      {id: 1, label: 'Z1'},
+{id: 2, label: 'Z2'},
+{id: 3, label: 'Z3'},
+{id: 4, label: 'Z4'},
+{id: 5, label: 'Z5'},
+{id: 6, label: 'Z6'},
+{id: 7, label: 'Z7'},
+{id: 8, label: 'Z8'},
+{id: 9, label: 'Z9'},
+{id: 10, label: 'Z10'},
+{id: 11, label: 'Z11'},
+{id: 12, label: 'Z12'},
+{id: 13, label: 'Z13'},
+{id: 14, label: 'Z14'},
+{id: 15, label: 'Z15'},
+{id: 16, label: 'Z16'},
+{id: 17, label: 'Z17'},
+{id: 18, label: 'Z18'},
+{id: 19, label: 'Z19'},
+{id: 20, label: 'Z20'},
+{id: 21, label: 'Z21'},
+{id: 22, label: 'Z22'},
+{id: 23, label: 'Z23'},
+{id: 24, label: 'Z24'},
+{id: 25, label: 'Z25'},
+{id: 26, label: 'Z26'},
+{id: 27, label: 'Z27'},
+{id: 28, label: 'Z28'},
+{id: 29, label: 'Z29'},
+{id: 30, label: 'Z30'},
+{id: 31, label: 'Z31'},
+{id: 32, label: 'Z32'},
+    ]);
+
+    // create an array with edges
+    var edges = new vis.DataSet([
+        {from: 2, to: 1, arrows:'to'},
+        {from: 3, to: 1, arrows:'to'},
+        {from: 6, to: 1, arrows:'to'},
+        {from: 4, to: 3, arrows:'to'},
+        {from: 5, to: 2, arrows:'to'},
+        {from: 7, to: 6, arrows:'to'},
+        {from: 24, to: 5, arrows:'to'},
+        {from: 12, to: 5, arrows:'to'},
+        {from: 11, to: 5, arrows:'to'},
+        {from: 8, to: 7, arrows:'to'},
+        {from: 25, to: 24, arrows:'to'},
+        {from: 13, to: 12, arrows:'to'},
+        {from: 15, to: 11, arrows:'to'},
+        {from: 9, to: 8, arrows:'to'},
+        {from: 26, to: 25, arrows:'to'},
+        {from: 14, to: 13, arrows:'to'},
+        {from: 16, to: 15, arrows:'to'},
+        {from: 10, to: 9, arrows:'to'},
+        {from: 27, to: 26, arrows:'to'},
+        {from: 17, to: 16, arrows:'to'},
+        {from: 28, to: 27, arrows:'to'},
+        {from: 18, to: 17, arrows:'to'},
+        {from: 29, to: 28, arrows:'to'},
+        {from: 21, to: 18, arrows:'to'},
+        {from: 19, to: 18, arrows:'to'},
+        {from: 31, to: 29, arrows:'to'},
+        {from: 30, to: 29, arrows:'to'},
+        {from: 22, to: 21, arrows:'to'},
+        {from: 20, to: 19, arrows:'to'},
+        {from: 32, to: 31, arrows:'to'},
+        {from: 23, to: 22, arrows:'to'},
+    ]);
+
+    // create a network
+    var container = document.getElementById('mynetwork');
+
+    // provide the data in the vis format
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+    var options = {};
+
+    // initialize your network!
+    var network = new vis.Network(container, data, options);
+</script>
+</body>
+</html>
