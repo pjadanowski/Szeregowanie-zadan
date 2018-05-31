@@ -9,20 +9,20 @@ Jestem autorem tych przedziwnych implementacji algorytmów ;)
 ### Lista zadań
 
   - [CPM][cpm]
-  - zmodyfikowany algorytm Liu
-  - algorytm Brucker'a
-  - zmodyfikowany algorytm Johnsona 
+  - [zmodyfikowany algorytm Liu][liu]
+  - [algorytm Brucker'a][brucker]
+  - [zmodyfikowany algorytm Johnsona][johnson] 
 
 
 
 ### Opis
 
-| Zadanie | Link |
-| ------ | ------ |
-| CPM | [link][cpm] |
-| zmodyfikowany algorytm Liu | [plugins/github/README.md][liu] |
-| algorytm Brucker'a | [plugins/googledrive/README.md][brucker] |
-| zmodyfikowany algorytm Johnsona  | [plugins/onedrive/README.md][johnson] |
+| Zadanie | 
+| ------ | 
+|[CPM][cpm]}
+|   [zmodyfikowany algorytm Liu][liu]|
+ |  [algorytm Brucker'a][brucker]|
+|  [zmodyfikowany algorytm Johnsona][johnson] |
 
 
 
@@ -30,7 +30,7 @@ Jestem autorem tych przedziwnych implementacji algorytmów ;)
    [hanna]: <https://inf.ug.edu.pl/~hanna/szeregowanie/>
 
    [cpm]: <#>
-   [liu]: <#>
-   [brucker]: <#>
-   [johnson]: <#>
+   [liu]: <https://github.com/pjadanowski/Szeregowanie-zadan/tree/master/Liu>
+   [brucker]: <https://github.com/pjadanowski/Szeregowanie-zadan/tree/master/Brucker>
+   [johnson]: <https://github.com/pjadanowski/Szeregowanie-zadan/tree/master/JohnsonModified>
 
